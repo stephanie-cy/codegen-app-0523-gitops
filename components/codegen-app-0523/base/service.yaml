@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: codegen-app-0523
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: codegen-app-0523 
+  name: codegen-app-0523
+spec:
+  ports:
+  - port: 8501
+    protocol: TCP
+    targetPort: 8501
+  selector:
+    app.kubernetes.io/instance: codegen-app-0523 
